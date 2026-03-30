@@ -1,90 +1,111 @@
-OSS Audit Project – Git (24BAI10173)
-Student Details
-Name: Udit Raghuvanshi
-Registration Number: 24BAI10173
-Course: Open Source Software
-Chosen Software: Git
-Project Overview
+# OSS Audit Project – Git (24BAI10173)
 
-This project is based on Git, an open-source distributed version control system created by Linus Torvalds. The purpose of this audit is to understand the philosophy of open source software, explore how Git works in a Linux environment, and demonstrate Linux shell scripting concepts through five practical scripts.
+## Student Details
 
-The project includes five shell scripts, each designed to show different Bash scripting concepts such as variables, loops, conditionals, file handling, and user input.
+* **Name:** Udit Raghuvanshi
+* **Registration Number:** 24BAI10173
+* **Course:** Open Source Software
+* **Chosen Software:** Git
 
-Included Script Files
-1) script1_system_identity.sh
+---
 
-Displays Linux system details like:
+## Project Overview
 
-distribution / OS
-kernel version
-current user
-home directory
-uptime
-current date and time
-license information
+This project is based on **Git**, an open-source distributed version control system created by **Linus Torvalds**. The main objective of this audit is to study the philosophy of open source software, understand how Git works in a Linux environment, and demonstrate Bash scripting concepts through five shell scripts.
 
-Concepts used: variables, command substitution, echo formatting.
+The repository contains five shell scripts that cover important Linux concepts such as variables, loops, conditionals, file handling, and interactive user input.
 
-2) script2_git_package_inspector.sh
+---
 
-Checks whether Git is installed on the system and shows:
+## Files Included
 
-Git version
-license
-short purpose description
+### `script1_system_identity.sh`
 
-Concepts used: if-else, case statement, package checking.
+Displays:
 
-3) script3_disk_permission_auditor.sh
+* operating system / distribution
+* kernel version
+* current user
+* home directory
+* uptime
+* current date and time
+* Linux license information
 
-Audits important Linux directories and prints:
+**Concepts:** variables, command substitution, echo formatting.
 
-directory size
-permissions
-owner and group
-Git configuration file check
+### `script2_git_package_inspector.sh`
 
-Concepts used: for loop, du, ls -ld, awk.
+Checks whether Git is installed and prints:
 
-4) script4_git_log_analyzer.sh
+* Git version
+* license
+* purpose statement
 
-Reads a log file line by line and:
+**Concepts:** if-else, case statement.
 
-searches for a keyword like error
-counts occurrences
-prints last matching lines
+### `script3_disk_permission_auditor.sh`
 
-Concepts used: while-read loop, grep, counter variables, command-line arguments.
+Audits system directories and prints:
 
-5) script5_open_source_manifesto.sh
+* directory size
+* owner/group
+* permissions
+* Git config file status
 
-An interactive script that asks the user three questions and generates a personalized open-source manifesto text file.
+**Concepts:** for loop, `du`, `ls -ld`, `awk`.
 
-Concepts used: read, variables, string building, output redirection, date command.
+### `script4_git_log_analyzer.sh`
 
-How to Run the Scripts
+Reads a log file and:
 
-Open Git Bash / Linux terminal inside the project folder.
+* searches for a keyword
+* counts occurrences
+* prints last matching lines
 
-Give execute permission
+**Concepts:** while loop, grep, counter variables, command-line arguments.
+
+### `script5_open_source_manifesto.sh`
+
+Interactive script that asks 3 questions and generates a manifesto text file.
+
+**Concepts:** `read`, variables, output redirection, date.
+
+---
+
+## How to Run
+
+Open Git Bash or Linux terminal in the project folder.
+
+```bash
 chmod +x *.sh
-Run scripts
 ./script1_system_identity.sh
 ./script2_git_package_inspector.sh
 ./script3_disk_permission_auditor.sh
 ./script4_git_log_analyzer.sh sample.log error
 ./script5_open_source_manifesto.sh
-Sample Input for Script 4
+```
 
-Create a sample log file before running Script 4:
+---
 
+## Sample Log File for Script 4
+
+```bash
 echo "error in commit" > sample.log
 echo "warning in push" >> sample.log
 echo "error in merge" >> sample.log
-Dependencies
-Git Bash or Linux terminal
-Git installed
-VS Code for editing
-Final Note
+echo "fatal error in rebase" >> sample.log
+```
 
-This project helped me understand how Git represents the true spirit of open source software by enabling collaboration, transparency, and community-driven development. The shell scripts demonstrate practical Linux skills along with the philosophy of free and open software
+---
+
+## Dependencies
+
+* Git installed
+* Git Bash / Linux terminal
+* VS Code
+
+---
+
+## Conclusion
+
+This project helped me understand the importance of **Git in the open-source ecosystem**. It also improved my understanding of Linux shell scripting and how automation supports collaboration in open-source developme
